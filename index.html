@@ -7,36 +7,167 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-yHmfOZyQ8Eq0FOchutWkq8KuqKX6Pu9SLaW7Tk+O9FZgYXLX0D7TUXgDFICvKZfVwS1Z0sUPkA+L8L5Rz0PVRg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
-    /* ... (o mesmo CSS que você já tinha, está ótimo!) ... */
+    :root {
+      --vermelho-claro: #c00;
+      --preto: #000;
+      --branco: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: var(--branco);
+      color: var(--preto);
+    }
+
+    header {
+      background: var(--vermelho-claro);
+      color: var(--branco);
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    header h2 {
+      font-size: 24px;
+      margin-top: 10px;
+      font-weight: 400;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: var(--vermelho-claro);
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #f5f5f5;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      color: var(--vermelho-claro);
+      margin-top: 10px;
+    }
+
+    .card img {
+      width: 100%;
+      max-width: 220px;
+      margin: 0 auto 15px;
+      display: block;
+      border-radius: 8px;
+    }
+
+    .button {
+      background: var(--vermelho-claro);
+      color: var(--branco);
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: 600;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .contato p {
+      margin: 5px 0;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #111;
+      color: var(--branco);
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .whatsapp-fixed {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+
+    .whatsapp-fixed a {
+      background: #25d366;
+      color: white;
+      font-size: 24px;
+      padding: 16px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Claro</h1>
-    <h2>Consultor Claro Autorizado</h2>
+    <h2>Consultor Autorizado - Vinicius Vieira</h2>
   </header>
 
   <section>
     <h2>Planos em Destaque</h2>
     <div class="cards">
       <div class="card">
-        <img src="https://www.claro.com.br/o/static/CLARO/img/planos-claro-controle.png" alt="Imagem do plano Claro Controle" />
+        <img src="https://static.claro.com.br/portal/home/2021/11/controle.png" alt="Plano Controle Claro" loading="lazy">
         <h3>Controle Claro</h3>
         <p>A partir de R$54,90 com apps ilimitados e ligações à vontade.</p>
         <a href="https://wa.me/5519995773861" class="button" target="_blank">Solicitar no WhatsApp</a>
       </div>
       <div class="card">
-        <img src="https://www.claro.com.br/o/static/CLARO/img/fibra-claro.png" alt="Imagem da Internet Claro Fibra" />
+        <img src="https://static.claro.com.br/portal/home/2021/11/fibra.png" alt="Internet Claro Fibra" loading="lazy">
         <h3>Internet Fibra</h3>
-        <p>100% de download e 50% de upload. Consulte disponibilidade no seu endereço.</p>
+        <p>Download rápido e upload eficiente. Consulte disponibilidade no seu endereço.</p>
         <a href="https://wa.me/5519995773861" class="button" target="_blank">Verificar Viabilidade</a>
       </div>
       <div class="card">
-        <img src="https://www.claro.com.br/o/static/CLARO/img/tv-box.png" alt="Imagem da Claro Box TV" />
+        <img src="https://static.claro.com.br/portal/home/2021/11/claro-box.png" alt="Claro Box TV" loading="lazy">
         <h3>Claro Box TV</h3>
-        <p>TV com streaming, fácil instalação e canais ao vivo. Netflix, YouTube e mais.</p>
+        <p>Streaming, canais ao vivo, Netflix, YouTube e mais em um único aparelho.</p>
         <a href="https://wa.me/5519995773861" class="button" target="_blank">Contratar TV Claro</a>
       </div>
     </div>
@@ -46,15 +177,15 @@
     <h2>Smartphones e Consultoria</h2>
     <div class="cards">
       <div class="card">
-        <img src="https://www.claro.com.br/o/static/CLARO/img/smartphones.png" alt="Imagem de diversos Smartphones" />
+        <img src="https://static.claro.com.br/portal/home/2021/11/smartphones.png" alt="Smartphones Claro" loading="lazy">
         <h3>Smartphones</h3>
-        <p>Modelos Samsung, Motorola e iPhone com parcelamento em até 21x sem juros no cartão.</p>
+        <p>Samsung, iPhone, Motorola com até 21x sem juros no cartão.</p>
         <a href="https://wa.me/5519995773861" class="button" target="_blank">Ver Ofertas</a>
       </div>
       <div class="card">
-        <img src="https://www.claro.com.br/o/static/CLARO/img/consultoria.png" alt="Imagem representando consultoria especializada" />
+        <img src="https://static.claro.com.br/portal/home/2021/11/consultoria.png" alt="Consultoria Especializada" loading="lazy">
         <h3>Consultoria Especializada</h3>
-        <p>Atendimento personalizado para encontrar o melhor plano para você ou sua empresa.</p>
+        <p>Atendimento personalizado para clientes e empresas.</p>
         <a href="https://wa.me/5519995773861" class="button" target="_blank">Falar com Consultor</a>
       </div>
     </div>
@@ -81,7 +212,8 @@
   </footer>
 
   <div class="whatsapp-fixed">
-    <a href="https://wa.me/5519995773861" target="_blank" aria-label="Botão WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://wa.me/5519995773861" target="_blank" aria-label="Fale conosco no WhatsApp"><i class="fab fa-whatsapp"></i></a>
   </div>
+
 </body>
 </html>
