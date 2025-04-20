@@ -3,80 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Consultoria Claro - Telecom</title>
+  <title>Consultor Claro - Vinicius Vieira</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header { background-color: #cc092f; color: white; padding: 20px; text-align: center; }
-    nav { background-color: #eee; display: flex; justify-content: center; gap: 20px; padding: 10px 0; }
-    nav a { text-decoration: none; color: #cc092f; font-weight: bold; }
-    section { padding: 40px 20px; max-width: 800px; margin: auto; }
-    h2 { color: #cc092f; }
-    footer { background-color: #cc092f; color: white; text-align: center; padding: 20px; margin-top: 40px; }
-    form { display: flex; flex-direction: column; gap: 10px; }
-    input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
-    button { padding: 10px; background-color: #cc092f; color: white; border: none; border-radius: 5px; cursor: pointer; }
-    .whatsapp-btn { display: inline-block; background-color: #25d366; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; }
+    body { margin: 0; font-family: Arial, sans-serif; background: #fff; color: #333; }
+    header {
+      background: url('270831.webp') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    header h1 { font-size: 48px; margin: 0; }
+    header h2 { font-size: 24px; margin-top: 10px; color: #f1f1f1; }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    section h2 { font-size: 32px; margin-bottom: 20px; color: #c00; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card h3 { margin-top: 0; color: #c00; }
+    .card img { width: 100%; max-width: 200px; margin: 10px auto; display: block; }
+    .button {
+      background: #c00;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    footer { background: #222; color: #fff; padding: 20px; text-align: center; }
+    .contato p { margin: 5px 0; }
+    form input, form textarea {
+      width: 100%; padding: 10px; margin: 5px 0; border-radius: 6px; border: 1px solid #ccc;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Consultoria Claro - Sua Conexão Ideal</h1>
-    <p>Encontre o melhor plano para você ou sua empresa, focados em te manter sempre conectados e com o menor custo de telefonia.</p>
+    <h1>Claro</h1>
+    <h2>Consultor Autorizado</h2>
   </header>
 
-  <nav>
-    <a href="#sobre">Sobre Nós</a>
-    <a href="#vantagens">Vantagens</a>
-    <a href="#planos">Planos</a>
-    <a href="#contato">Contato</a>
-  </nav>
-
-  <section id="sobre">
-    <h2>Sobre Nós</h2>
-    <p>Realizamos um atendimento personalizado proporcionando uma venda consultiva voltada à melhor opção aos nossos clientes, garantindo assim transparência no processo e levando a uma parceria duradoura baseada na confiança e no bom atendimento.</p>
+  <section>
+    <h2>Planos em Destaque</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://www.claro.com.br/o/static/CLARO/img/planos-claro-controle.png" alt="Claro Controle">
+        <h3>Controle Claro</h3>
+        <p>A partir de R$54,90. Internet, ligações ilimitadas e apps liberados sem descontar da franquia.</p>
+      </div>
+      <div class="card">
+        <img src="https://www.claro.com.br/o/static/CLARO/img/tv-box.png" alt="Claro Box TV">
+        <h3>Claro Box TV</h3>
+        <p>Assista Netflix, Globoplay, YouTube, Premiere, e muito mais! Tudo com qualidade e praticidade.</p>
+      </div>
+      <div class="card">
+        <img src="https://www.claro.com.br/o/static/CLARO/img/fibra-claro.png" alt="Internet Fibra">
+        <h3>Internet Fibra</h3>
+        <p>100% de download e 50% de upload. Consulte a disponibilidade para o seu endereço.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="vantagens">
-    <h2>Vantagens da Consultoria</h2>
-    <ul>
-      <li>Atendimento exclusivo para pessoa física e jurídica</li>
-      <li>Planos Claro personalizados com foco em economia</li>
-      <li>Smartphones com desconto e parcelamento direto na fatura</li>
-      <li>Internet Fibra de alta velocidade</li>
-      <li>Combos com TV Box e apps como Netflix, Globoplay e mais</li>
-    </ul>
+  <section>
+    <h2>Serviços</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://www.claro.com.br/o/static/CLARO/img/smartphones.png" alt="Smartphones Claro">
+        <h3>Smartphones</h3>
+        <p>Modelos Samsung, Motorola e iPhone com super descontos. Parcelamos em até 21x sem juros no cartão de crédito.</p>
+      </div>
+      <div class="card">
+        <img src="https://www.claro.com.br/o/static/CLARO/img/consultoria.png" alt="Consultoria Pessoal">
+        <h3>Consultoria Pessoal</h3>
+        <p>Identificamos o plano ideal com o melhor custo-benefício, de forma personalizada.</p>
+      </div>
+    </div>
+    <a href="https://wa.me/5519995773861" class="button" target="_blank"><i class="fab fa-whatsapp"></i> Fale agora no WhatsApp</a>
   </section>
 
-  <section id="planos">
-    <h2>Planos e Serviços Claro</h2>
-    <p>Oferecemos soluções completas para:</p>
-    <ul>
-      <li><strong>Pessoa Física:</strong> Planos móveis, Internet Fibra, TV Box, Smartphones</li>
-      <li><strong>Pessoa Jurídica:</strong> Internet Fibra Corporativa com suporte especializado</li>
-    </ul>
-  </section>
-
-  <section id="contato">
+  <section class="contato">
     <h2>Contato</h2>
-    <p>Preencha o formulário abaixo ou fale direto no WhatsApp.</p>
-    <form action="https://formspree.io/f/xayrezqy" method="POST">
-      <input type="text" name="nome" placeholder="Seu nome" required>
-      <input type="tel" name="numero" placeholder="Seu número" required>
-      <input type="text" name="assunto" placeholder="Assunto" required>
-      <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
-      <button type="submit">Enviar Mensagem</button>
+    <p><strong>WhatsApp:</strong> (19) 99577-3861</p>
+    <p><strong>Email:</strong> viniciusvieiraconsultorclaro@gmail.com</p>
+    <p><strong>Local:</strong> Mococa - SP</p>
+    <form>
+      <input type="text" placeholder="Nome" required><br><br>
+      <input type="tel" placeholder="Número" required><br><br>
+      <input type="text" placeholder="Assunto" required><br><br>
+      <textarea placeholder="Mensagem" rows="4" required></textarea><br><br>
+      <button type="submit" class="button">Enviar</button>
     </form>
-    <br>
-    <a class="whatsapp-btn" href="https://wa.me/5519995773861" target="_blank">Falar no WhatsApp</a>
-  </section>
-
-  <section id="avaliacoes">
-    <h2>Avaliações e Comentários</h2>
-    <p>Estamos trabalhando para inserir os comentários dos nossos clientes. Em breve, você poderá ver aqui as experiências reais de quem já contratou nossos serviços!</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Consultoria Claro - Todos os direitos reservados.</p>
+    <p>© 2025 Consultor Claro - Vinicius Vieira</p>
   </footer>
 </body>
 </html>
+
