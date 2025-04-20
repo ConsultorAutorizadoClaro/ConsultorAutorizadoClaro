@@ -7,37 +7,36 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     :root {
-      --vermelho-claro: #c00;
-      --preto: #000;
-      --branco: #fff;
+      --vermelho: #c00;
+      --branco: #ffffff;
+      --preto: #000000;
+      --cinza-claro: #f4f4f4;
     }
 
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
-      background: var(--branco);
+      background-color: var(--branco);
       color: var(--preto);
     }
 
     header {
-      background: var(--vermelho-claro);
+      background: var(--vermelho);
       color: var(--branco);
+      padding: 80px 20px;
       text-align: center;
-      padding: 60px 20px;
     }
 
     header h1 {
       font-size: 48px;
-      margin: 0;
-      font-weight: 700;
+      margin-bottom: 10px;
     }
 
     header h2 {
-      font-size: 24px;
-      margin-top: 10px;
+      font-size: 20px;
       font-weight: 400;
     }
 
@@ -48,172 +47,21 @@
     }
 
     section h2 {
-      font-size: 32px;
-      margin-bottom: 30px;
-      color: var(--vermelho-claro);
       text-align: center;
+      font-size: 32px;
+      color: var(--vermelho);
+      margin-bottom: 40px;
     }
 
-    .cards {
+    .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 30px;
     }
 
     .card {
-      background: #f5f5f5;
-      border-radius: 12px;
+      background: var(--cinza-claro);
+      border-radius: 10px;
       padding: 20px;
       text-align: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .card h3 {
-      color: var(--vermelho-claro);
-      margin-top: 10px;
-    }
-
-    .card img {
-      width: 100%;
-      max-width: 220px;
-      margin: 0 auto 15px;
-      display: block;
-      border-radius: 8px;
-    }
-
-    .button {
-      background: var(--vermelho-claro);
-      color: var(--branco);
-      padding: 12px 24px;
-      border: none;
-      border-radius: 6px;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 10px;
-      font-weight: 600;
-    }
-
-    form input, form textarea {
-      width: 100%;
-      padding: 12px;
-      margin: 10px 0;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      font-size: 16px;
-    }
-
-    .contato p {
-      margin: 5px 0;
-    }
-
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: none;
-      margin-top: 20px;
-      border-radius: 8px;
-    }
-
-    footer {
-      background: #111;
-      color: var(--branco);
-      padding: 30px 20px;
-      text-align: center;
-    }
-
-    .whatsapp-fixed {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 999;
-    }
-
-    .whatsapp-fixed a {
-      background: #25d366;
-      color: white;
-      font-size: 24px;
-      padding: 16px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-      text-decoration: none;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Claro</h1>
-    <h2>Consultor Autorizado - Vinicius Vieira</h2>
-  </header>
-
-  <section>
-    <h2>Planos em Destaque</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="https://static.claro.com.br/portal/home/2021/11/controle.png" alt="Plano Controle Claro" loading="lazy">
-        <h3>Controle Claro</h3>
-        <p>A partir de R$54,90 com apps ilimitados e ligações à vontade.</p>
-        <a href="https://wa.me/5519995773861" class="button" target="_blank">Solicitar no WhatsApp</a>
-      </div>
-      <div class="card">
-        <img src="https://static.claro.com.br/portal/home/2021/11/fibra.png" alt="Internet Claro Fibra" loading="lazy">
-        <h3>Internet Fibra</h3>
-        <p>Download rápido e upload eficiente. Consulte disponibilidade no seu endereço.</p>
-        <a href="https://wa.me/5519995773861" class="button" target="_blank">Verificar Viabilidade</a>
-      </div>
-      <div class="card">
-        <img src="https://static.claro.com.br/portal/home/2021/11/claro-box.png" alt="Claro Box TV" loading="lazy">
-        <h3>Claro Box TV</h3>
-        <p>Streaming, canais ao vivo, Netflix, YouTube e mais em um único aparelho.</p>
-        <a href="https://wa.me/5519995773861" class="button" target="_blank">Contratar TV Claro</a>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Smartphones e Consultoria</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="https://static.claro.com.br/portal/home/2021/11/smartphones.png" alt="Smartphones Claro" loading="lazy">
-        <h3>Smartphones</h3>
-        <p>Samsung, iPhone, Motorola com até 21x sem juros no cartão.</p>
-        <a href="https://wa.me/5519995773861" class="button" target="_blank">Ver Ofertas</a>
-      </div>
-      <div class="card">
-        <img src="https://static.claro.com.br/portal/home/2021/11/consultoria.png" alt="Consultoria Especializada" loading="lazy">
-        <h3>Consultoria Especializada</h3>
-        <p>Atendimento personalizado para clientes e empresas.</p>
-        <a href="https://wa.me/5519995773861" class="button" target="_blank">Falar com Consultor</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="contato">
-    <h2>Contato</h2>
-    <form action="#" method="post">
-      <input type="text" name="nome" placeholder="Nome" required />
-      <input type="tel" name="telefone" placeholder="Número" required />
-      <input type="text" name="assunto" placeholder="Assunto" required />
-      <textarea name="mensagem" placeholder="Mensagem" rows="4" required></textarea>
-      <button type="submit" class="button">Enviar</button>
-    </form>
-    <p><strong>Consultor:</strong> Vinicius Vieira</p>
-    <p><strong>WhatsApp:</strong> (19) 99577-3861</p>
-    <p><strong>Email:</strong> viniciusvieiraconsultorclaro@gmail.com</p>
-    <p><strong>Local:</strong> Mococa - SP</p>
-    <iframe src="https://maps.google.com/maps?q=Mococa%20SP&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>
-  </section>
-
-  <footer>
-    <p>© 2025 Consultor Claro - Vinicius Vieira. Todos os direitos reservados.</p>
-  </footer>
-
-  <div class="whatsapp-fixed">
-    <a href="https://wa.me/5519995773861" target="_blank" aria-label="Fale conosco no WhatsApp"><i class="fab fa-whatsapp"></i></a>
-  </div>
-
-</body>
-</html>
+      box-shadow: 0
