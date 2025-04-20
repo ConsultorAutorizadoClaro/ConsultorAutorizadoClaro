@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultor Claro - Vinicius Vieira</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #fff; color: #333; }
+    header {
+      background: url('270831.webp') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    header h1 { font-size: 48px; margin: 0; }
+    header h2 { font-size: 24px; margin-top: 10px; color: #f1f1f1; }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    section h2 { font-size: 32px; margin-bottom: 20px; color: #c00; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card h3 { margin-top: 0; color: #c00; }
+    .card img { width: 100%; max-width: 200px; margin: 10px auto; display: block; }
+    .button {
+      background: #c00;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    footer { background: #222; color: #fff; padding: 20px; text-align: center; }
+    .contato p { margin: 5px 0; }
+    form input, form textarea {
+      width: 100%; padding: 10px; margin: 5px 0; border-radius: 6px; border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Claro</h1>
+    <h2>Consultor Autorizado</h2>
+  </header>
+
+  <section>
+    <h2>Planos em Destaque</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://www.claro.com.br/o/static/CLARO/img/planos-claro-controle.png" alt="Claro Controle">
+        <h3>Controle Claro</h3>
+        <p>A partir de R$54,90. Internet, ligações ilimitadas e apps liberados sem descontar da franquia.</p>
+      </div>
+      <div class="card">
+        <img src="https://www.claro.com.br/o/static/CLARO/img/tv-box.png" alt="Claro Box TV">
+        <h3>Claro Box TV</h3>
+        <p>Assista Netflix, Globoplay, YouTube, Premiere, e muito mais! Tudo com qualidade e praticidade.</p>
+      </div>
+      <div class="card">
+        <img src="https://www.claro.com.br/o/static/CLARO/img/fibra-claro.png" alt="Internet Fibra">
+        <h3>Internet Fibra</h3>
+        <p>100% de download e 50% de upload. Consulte a disponibilidade para o seu endereço.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Serviços</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://www.claro.com.br/o/static/CLARO/img/smartphones.png" alt="Smartphones Claro">
+        <h3>Smartphones</h3>
+        <p>Modelos Samsung, Motorola e iPhone com super descontos. Parcelamos em até 21x sem juros no cartão de crédito.</p>
+      </div>
+      <div class="card">
+        <img src="https://www.claro.com.br/o/static/CLARO/img/consultoria.png" alt="Consultoria Pessoal">
+        <h3>Consultoria Pessoal</h3>
+        <p>Identificamos o plano ideal com o melhor custo-benefício, de forma personalizada.</p>
+      </div>
+    </div>
+    <a href="https://wa.me/5519995773861" class="button" target="_blank"><i class="fab fa-whatsapp"></i> Fale agora no WhatsApp</a>
+  </section>
+
+  <section class="contato">
+    <h2>Contato</h2>
+    <p><strong>WhatsApp:</strong> (19) 99577-3861</p>
+    <p><strong>Email:</strong> viniciusvieiraconsultorclaro@gmail.com</p>
+    <p><strong>Local:</strong> Mococa - SP</p>
+    <form>
+      <input type="text" placeholder="Nome" required><br><br>
+      <input type="tel" placeholder="Número" required><br><br>
+      <input type="text" placeholder="Assunto" required><br><br>
+      <textarea placeholder="Mensagem" rows="4" required></textarea><br><br>
+      <button type="submit" class="button">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Consultor Claro - Vinicius Vieira</p>
+  </footer>
+</body>
+</html>
