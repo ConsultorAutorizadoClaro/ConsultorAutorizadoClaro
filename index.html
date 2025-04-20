@@ -1,24 +1,45 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Consultor Claro - Vinicius Vieira</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #fff; color: #333; }
+    body { margin: 0; font-family: 'Montserrat', sans-serif; background: #fff; color: #333; }
     header {
       background: url('270831.webp') no-repeat center center/cover;
       color: white;
       text-align: center;
-      padding: 80px 20px;
+      padding: 100px 20px;
+      position: relative;
     }
-    header h1 { font-size: 48px; margin: 0; }
-    header h2 { font-size: 24px; margin-top: 10px; color: #f1f1f1; }
-    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
-    section h2 { font-size: 32px; margin-bottom: 20px; color: #c00; }
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    header h1 { font-size: 48px; margin: 0; background: rgba(0,0,0,0.6); display: inline-block; padding: 10px 20px; border-radius: 8px; }
+    header h2 { font-size: 24px; margin-top: 10px; background: rgba(0,0,0,0.5); padding: 5px 15px; border-radius: 6px; display: inline-block; }
+    .whatsapp-fixed {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+    .whatsapp-fixed a {
+      background: #25d366;
+      color: white;
+      font-size: 24px;
+      padding: 12px 16px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      text-decoration: none;
+    }
+    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+    section h2 { font-size: 32px; margin-bottom: 30px; color: #c00; text-align: center; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
     .card {
       background: #f9f9f9;
       padding: 20px;
@@ -38,17 +59,18 @@
       display: inline-block;
       margin-top: 10px;
     }
-    footer { background: #222; color: #fff; padding: 20px; text-align: center; }
     .contato p { margin: 5px 0; }
     form input, form textarea {
       width: 100%; padding: 10px; margin: 5px 0; border-radius: 6px; border: 1px solid #ccc;
     }
+    iframe { width: 100%; height: 300px; border: 0; margin-top: 20px; border-radius: 8px; }
+    footer { background: #222; color: #fff; padding: 30px 20px; text-align: center; }
   </style>
 </head>
 <body>
   <header>
     <h1>Claro</h1>
-    <h2>Consultor Autorizado</h2>
+    <h2>Consultor Claro Autorizado</h2>
   </header>
 
   <section>
@@ -57,54 +79,64 @@
       <div class="card">
         <img src="https://www.claro.com.br/o/static/CLARO/img/planos-claro-controle.png" alt="Claro Controle">
         <h3>Controle Claro</h3>
-        <p>A partir de R$54,90. Internet, ligações ilimitadas e apps liberados sem descontar da franquia.</p>
-      </div>
-      <div class="card">
-        <img src="https://www.claro.com.br/o/static/CLARO/img/tv-box.png" alt="Claro Box TV">
-        <h3>Claro Box TV</h3>
-        <p>Assista Netflix, Globoplay, YouTube, Premiere, e muito mais! Tudo com qualidade e praticidade.</p>
+        <p>A partir de R$54,90 com apps ilimitados e ligações à vontade.</p>
+        <a href="https://wa.me/5519995773861" class="button" target="_blank">Solicitar no WhatsApp</a>
       </div>
       <div class="card">
         <img src="https://www.claro.com.br/o/static/CLARO/img/fibra-claro.png" alt="Internet Fibra">
         <h3>Internet Fibra</h3>
-        <p>100% de download e 50% de upload. Consulte a disponibilidade para o seu endereço.</p>
+        <p>100% de download e 50% de upload. Consulte disponibilidade no seu endereço.</p>
+        <a href="https://wa.me/5519995773861" class="button" target="_blank">Verificar Viabilidade</a>
+      </div>
+      <div class="card">
+        <img src="https://www.claro.com.br/o/static/CLARO/img/tv-box.png" alt="TV Box Claro">
+        <h3>Claro Box TV</h3>
+        <p>TV com streaming, fácil instalação e canais ao vivo. Netflix, YouTube e mais.</p>
+        <a href="https://wa.me/5519995773861" class="button" target="_blank">Contratar TV Claro</a>
       </div>
     </div>
   </section>
 
   <section>
-    <h2>Serviços</h2>
+    <h2>Smartphones e Consultoria</h2>
     <div class="cards">
       <div class="card">
-        <img src="https://www.claro.com.br/o/static/CLARO/img/smartphones.png" alt="Smartphones Claro">
+        <img src="https://www.claro.com.br/o/static/CLARO/img/smartphones.png" alt="Smartphones">
         <h3>Smartphones</h3>
-        <p>Modelos Samsung, Motorola e iPhone com super descontos. Parcelamos em até 21x sem juros no cartão de crédito.</p>
+        <p>Modelos Samsung, Motorola e iPhone com parcelamento em até 21x sem juros no cartão.</p>
+        <a href="https://wa.me/5519995773861" class="button" target="_blank">Ver Ofertas</a>
       </div>
       <div class="card">
-        <img src="https://www.claro.com.br/o/static/CLARO/img/consultoria.png" alt="Consultoria Pessoal">
-        <h3>Consultoria Pessoal</h3>
-        <p>Identificamos o plano ideal com o melhor custo-benefício, de forma personalizada.</p>
+        <img src="https://www.claro.com.br/o/static/CLARO/img/consultoria.png" alt="Consultoria">
+        <h3>Consultoria Especializada</h3>
+        <p>Atendimento personalizado para encontrar o melhor plano para você ou sua empresa.</p>
+        <a href="https://wa.me/5519995773861" class="button" target="_blank">Falar com Consultor</a>
       </div>
     </div>
-    <a href="https://wa.me/5519995773861" class="button" target="_blank"><i class="fab fa-whatsapp"></i> Fale agora no WhatsApp</a>
   </section>
 
   <section class="contato">
     <h2>Contato</h2>
+    <form>
+      <input type="text" placeholder="Nome" required>
+      <input type="tel" placeholder="Número" required>
+      <input type="text" placeholder="Assunto" required>
+      <textarea placeholder="Mensagem" rows="4" required></textarea>
+      <button type="submit" class="button">Enviar</button>
+    </form>
+    <p><strong>Consultor:</strong> Vinicius Vieira</p>
     <p><strong>WhatsApp:</strong> (19) 99577-3861</p>
     <p><strong>Email:</strong> viniciusvieiraconsultorclaro@gmail.com</p>
     <p><strong>Local:</strong> Mococa - SP</p>
-    <form>
-      <input type="text" placeholder="Nome" required><br><br>
-      <input type="tel" placeholder="Número" required><br><br>
-      <input type="text" placeholder="Assunto" required><br><br>
-      <textarea placeholder="Mensagem" rows="4" required></textarea><br><br>
-      <button type="submit" class="button">Enviar</button>
-    </form>
+    <iframe src="https://maps.google.com/maps?q=Mococa%20SP&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>
   </section>
 
   <footer>
-    <p>© 2025 Consultor Claro - Vinicius Vieira</p>
+    <p>© 2025 Consultor Claro - Vinicius Vieira. Todos os direitos reservados.</p>
   </footer>
+
+  <div class="whatsapp-fixed">
+    <a href="https://wa.me/5519995773861" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  </div>
 </body>
 </html>
